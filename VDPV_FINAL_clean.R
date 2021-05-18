@@ -17,7 +17,7 @@ library(cowplot)
 library(sjPlot)
 
 setwd("~/Dropbox/PolioPreventingOutbreaks/14_VDPV")
-datab <- read_csv("seeding_final_emergence_MA.csv") %>% clean_names()
+datab <- read_csv("VDPV_dat.csv") %>% clean_names()
 
 datab$date_first <- dmy(datab$date_first)
 datab$date_last <- dmy(datab$date_last)
